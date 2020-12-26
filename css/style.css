@@ -17,7 +17,7 @@ body{
 
 :root{
     --back-color : #111111;
-    --back2-color :#111111fa;
+    --back2-color :#151515;
     --yelow-color : #FFB400;
     --red-color : #F72B1C;
     --roze-color : #EE6192;
@@ -217,6 +217,8 @@ ul{
     width: 300px;
     background-color: var(--back-color);
     transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
     overflow: hidden;
     z-index: 999;
     transition:all .5s ease;
@@ -279,6 +281,8 @@ ul{
     top: 50%;
     left: 0;
     transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
     background-color: white;
     cursor: pointer;
     color: var(--back-color);
@@ -315,10 +319,13 @@ ul{
     height: 200%;
     background-color: var(--yelow-color);
     transform: rotate(-14deg);
+        -moz-transform: rotate(-14deg);
+        -webkit-transform: rotate(-14deg);
     position: absolute;
     top: -37%;
     left: -84%;
     overflow: hidden;
+    z-index: 1;
 }
 .home-content{
     width: 100%;
@@ -336,6 +343,8 @@ ul{
     border-radius: 15px;
     display: flex;
     transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
 }
 .home-img img{
     width: 100%;
@@ -395,17 +404,23 @@ ul{
     width: 100%;
     overflow: hidden;
     position: relative;
+    z-index: 2;
 }
+/*
 .about-overlay{
     width: 100%;
     height: 200%;
     background-color: var(--yelow-color);
     transform: rotate(14deg);
+    -moz-transform: rotate(14deg);
+    -webkit-transform:rotate(14deg);
     position: absolute;
     top: -63%;
     right: -100%;
     overflow: hidden;
+    display:block;
 }
+*/
 .about-content{
     width: 100%;
     overflow: hidden;
@@ -419,6 +434,8 @@ ul{
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
     width:30%;
     height: 1px;
     background-color: #3e3e3e;
@@ -528,6 +545,8 @@ ul{
     left: 0;
     top: 0;
     border-radius: 5px;
+    -webkit-transform:rotate(45deg);
+    -moz-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 .about-skils{
