@@ -12,10 +12,10 @@ var myFullpage = new fullpage('#content', {
 	//Scrolling
 	css3: true,
 	scrollingSpeed: 700,
-	autoScrolling: true,
+	autoScrolling: false,
 	fitToSection: true,
 	fitToSectionDelay: 1000,
-	scrollBar: true,
+	scrollBar: false,
 	easing: 'easeInOutCubic',
 	easingcss3: 'ease',
 	loopBottom: false,
