@@ -1,0 +1,867 @@
+/*  Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+
+    .container{
+        width: 100%;
+        margin: auto;
+    }
+    .section-title{
+        display: block;
+        font-size: 23px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: white;
+        padding: 5% 0;
+    }
+    #fp-nav ul, .fp-slidesNav ul{
+        display: none;
+    }
+
+
+    /*------------- controls colors --------------*/
+    .controls{
+        position: fixed;
+        top: 20%;
+        width: 50%;
+        transform: translateY(-20%);
+    }
+    .control-btn{
+        position: fixed;
+        top: 20%;
+        left: 0;
+        transform: translateY(-20%);
+        width: 40px;
+        height: 40px;
+    }
+    .control-colors-list li{
+        width: 30px;
+        height: 30px;
+    }
+    .control-colors-list li i{
+        font-size: 17px;
+    }
+    /*------------X-------------X--------------*/
+
+
+    /*------------- home --------------------*/
+    .home{
+        background-color: var(--back-color);
+        height: 100%;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    .home-overlay{
+        display: block;
+        left: -98%;
+        z-index: 2;
+    }
+    .home-img{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        box-shadow: 0 0 0 0;
+        border-radius: 0;
+        transform: translateY(0);
+        z-index: 1;
+    }
+    .home-img img{
+        border-radius: 0;
+        opacity: .2;
+    }
+
+    .home-info{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        z-index: 3;
+        position: relative;
+    }
+    .home-info-content{
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        text-align: center;
+    }
+    .home-info-top {
+        color: white;
+        letter-spacing: 1px;
+        display: inline-block;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    .home-info-name {
+        font-size: 25px;
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+    }
+    .home-info-desc {
+        font-size: 13px;
+        width: 90%;
+        line-height:3;
+        color:rgb(218, 218, 218);
+        display: block;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+    .home-info-btn {
+        font-size: 13px;
+        height: 40px;
+        padding: 0 15px;
+    }
+    /*-----------X--------------X------------*/
+
+    /*---------------- about ----------------*/
+    .about{
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    .about-overlay{
+        display: none;
+    }
+    .about-content{
+        width: 100%;
+        overflow: hidden;
+        z-index: 2;
+        padding-bottom: 10%;
+        position: relative;
+    }
+    .about-content::after{
+        display: none;
+    }
+    .about-items{
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        z-index: 22;
+    }
+    .about-item{
+        width: 100%;
+        float: none;
+    }
+    .about-item.info{
+        padding: 20px 0 20px 10px;
+        margin-bottom: 30px;
+    }
+    .about-info-title{
+        font-size: 20px;
+        margin-bottom: 27px;
+    }
+    .about-info-me{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .about-info-me-list{
+        margin-right: 0;
+    }
+    .about-info-me-list li{
+        color: white;
+        line-height: 2;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    .about-info-me-list li span{
+        color: #b5afaf;
+    }
+    .about-info-btn{
+        height: 40px;
+        padding: 0 20px;
+        font-size: 13px;
+    }
+    .about-item.number{
+        float: none;
+        width: 100%;
+        padding: 0 5px;
+    }
+    .about-number{
+        display: block;
+    }
+    .about-number-item{
+        width: 100%;
+        display: block;
+        margin-right: 3%;
+        margin-bottom: 3%;
+    }
+    .about-number-item-num{
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+    .about-number-item-num::after{
+        font-size: 30px;
+    }
+    .about-number-item-desc{
+        font-size: 13px;
+    }
+    .about-number-item-desc::before{
+       display: none;
+    }
+    .about-skils{
+        width: 100%;
+        display: block;
+        padding: 5% 0;
+    }
+    .skils-title{
+        font-size: 30px;
+        margin-bottom: 5%;
+    }
+    .skils-item{
+        width: 50%;
+    }
+    .skils-item-title{
+        font-size: 13px;
+    }
+    /*-------------X----------------X-----------------*/
+
+
+    /*----------- portfolio -------------*/
+    .portfolio{
+        width: 100%;
+        padding: 5% 10px;
+    }
+    .portfolio-content{
+        width: 100%;
+        height: 100%;
+        margin-top: 50px;
+    }
+
+    .box{
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        margin-bottom: 2%;
+    }
+    .overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: orange;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } 
+    /*----------X--------------X-----------*/
+
+    /*------------ contact ---------------------*/
+    .contact{
+        display: block;
+        padding: 0 10px;
+    }
+    .contact-content{
+        display: block;
+    }
+    .form-contact{
+        display: block;
+        width: 100%;
+        flex: none;
+        float: none;
+        margin-top: 40px;
+    }
+    .form-name-email{
+        width: 100%;
+        display: block;
+    }
+    .form-name-email input{
+        flex: none;
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .form-name-email input:last-child{
+        margin-bottom: 0;
+    }
+    .contact-info{
+        flex: none;
+        width: 100%;
+        padding: 5% 0;
+        margin-left: 0;
+        margin-top: 70px;
+    }
+    .contact-info-title{
+        font-size: 20px;
+    }
+    .contact-info-list{
+        font-size: 13px;
+    }
+    /*-------------X-------------X--------------*/
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+    .container{
+        width: 97%;
+        margin: auto;
+    }
+    .section-title{
+        display: block;
+        font-size: 23px;
+        padding: 5% 0;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: white;
+    }
+    #fp-nav ul, .fp-slidesNav ul{
+        display: none;
+    }
+
+
+    /*------------- controls colors --------------*/
+    .controls{
+        position: fixed;
+        top: 20%;
+        width: 50%;
+        transform: translateY(-20%);
+    }
+    .control-btn{
+        position: fixed;
+        top: 20%;
+        left: 0;
+        transform: translateY(-20%);
+        width: 40px;
+        height: 40px;
+    }
+    .control-colors-list li{
+        width: 40px;
+        height: 40px;
+    }
+    .control-colors-list li i{
+        font-size: 18px;
+    }
+    /*------------X-------------X--------------*/
+
+
+    /*------------- home --------------------*/
+    .home{
+        background-color: var(--back-color);
+        height: 100%;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    .home-overlay{
+        display: block;
+        left: -95%;
+        z-index: 2;
+    }
+    .home-img{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        box-shadow: 0 0 0 0;
+        border-radius: 0;
+        transform: translateY(0);
+        z-index: 1;
+    }
+    .home-img img{
+        border-radius: 0;
+        opacity: .2;
+    }
+
+    .home-info{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        z-index: 3;
+        position: relative;
+    }
+    .home-info-content{
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        text-align: center;
+    }
+    .home-info-top {
+        color: white;
+        letter-spacing: 1px;
+        display: inline-block;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    .home-info-name {
+        font-size: 27px;
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+    }
+    .home-info-desc {
+        font-size: 13px;
+        width: 85%;
+        line-height:3;
+        color:rgb(218, 218, 218);
+        display: block;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+    .home-info-btn {
+        font-size: 13px;
+        height: 40px;
+        padding: 0 17px;
+    }
+    /*-----------X--------------X------------*/
+
+    /*---------------- about ----------------*/
+    .about{
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    .about-overlay{
+        display: none;
+    }
+    .about-content{
+        width: 100%;
+        overflow: hidden;
+        z-index: 2;
+        padding-bottom: 10%;
+        position: relative;
+    }
+    .about-content::after{
+        display: none;
+    }
+    .about-items{
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        z-index: 22;
+    }
+    .about-item{
+        width: 100%;
+        float: none;
+    }
+    .about-item.info{
+        padding: 20px 0 20px 10px;
+        margin-bottom: 30px;
+    }
+    .about-info-title{
+        font-size: 20px;
+        margin-bottom: 27px;
+    }
+    .about-info-me{
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .about-info-me-list{
+        flex: 1;
+    }
+    .about-info-me-list li{
+        color: white;
+        line-height: 2;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    .about-info-me-list li span{
+        color: #b5afaf;
+    }
+    .about-info-btn{
+        height: 40px;
+        padding: 0 20px;
+        font-size: 13px;
+    }
+    .about-item.number{
+        float: none;
+        width: 100%;
+        padding: 0 5px;
+    }
+    .about-number{
+        display: block;
+    }
+    .about-number-item{
+        width: 100%;
+        display: block;
+        margin-right: 3%;
+        margin-bottom: 3%;
+    }
+    .about-number-item-num{
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+    .about-number-item-num::after{
+        font-size: 30px;
+    }
+    .about-number-item-desc{
+        font-size: 13px;
+    }
+    .about-number-item-desc::before{
+       display: none;
+    }
+    .about-skils{
+        width: 100%;
+        display: block;
+        padding: 5% 0;
+    }
+    .skils-title{
+        font-size: 30px;
+        margin-bottom: 5%;
+    }
+    .skils-item{
+        width: 50%;
+    }
+    .skils-item-title{
+        font-size: 13px;
+    }
+    /*-------------X----------------X-----------------*/
+
+    /*----------- portfolio -------------*/
+    .portfolio{
+            width: 100%;
+            padding: 5% 10px;
+    }
+    .portfolio-content{
+            width: 100%;
+            height: 100%;
+            margin-top: 50px;
+            display: grid;
+    }
+    
+    .box{
+            width: 80%;
+            height: 400px;
+            margin: auto;
+            margin-bottom: 2%;
+    }
+    /*----------X--------------X-----------*/
+
+    /*------------ contact ---------------------*/
+    .contact{
+            display: block;
+            padding: 0 10px;
+    }
+    .contact-content{
+            display: block;
+    }
+    .form-contact{
+            display: block;
+            width: 100%;
+            flex: none;
+            float: none;
+    }
+    .form-name-email{
+            width: 100%;
+            display: block;
+    }
+    .form-name-email input{
+            flex: none;
+            margin-right: 0;
+            width: 100%;
+            margin-bottom: 10px;
+    }
+    .form-name-email input:last-child{
+            margin-bottom: 0;
+        }
+    .contact-info{
+            flex: none;
+            width: 100%;
+            padding: 5% 0;
+            margin-left: 0;
+            margin-top: 100px;
+    }
+    .contact-info-title{
+        font-size: 22px;
+    }
+    .contact-info-list{
+        font-size: 15px;
+    }
+    /*-------------X-------------X--------------*/
+
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .container{
+        width: 90%;
+        margin: auto;
+    }
+    #fp-nav ul, .fp-slidesNav ul{
+        display: none;
+    }
+
+    /*------------- home --------------------*/
+    .home{
+        background-color: var(--back-color);
+        height: 100%;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    .home-overlay{
+        display: block;
+        left: -90%;
+        z-index: 2;
+    }
+    .home-img{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        box-shadow: 0 0 0 0;
+        border-radius: 0;
+        transform: translateY(0);
+        z-index: 1;
+    }
+    .home-img img{
+        border-radius: 0;
+        opacity: .2;
+    }
+
+    .home-info{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        z-index: 3;
+        position: relative;
+    }
+    .home-info-content{
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        text-align: center;
+    }
+    .home-info-top {
+        color: white;
+        letter-spacing: 1px;
+        display: inline-block;
+        font-size: 25px;
+        text-transform: uppercase;
+    }
+    .home-info-name {
+        font-size: 35px;
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+    }
+    .home-info-desc {
+        font-size: 16px;
+        width: 85%;
+        line-height:3;
+        color:rgb(218, 218, 218);
+        display: block;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+    .home-info-btn {
+        font-size: 17px;
+        height: 50px;
+        padding: 0 25px;
+    }
+    /*-----------X--------------X------------*/
+
+    /*---------------- about ----------------*/
+    .about{
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    .about-overlay{
+        display: none;
+    }
+    .about-content{
+        width: 100%;
+        overflow: hidden;
+        z-index: 2;
+        padding-bottom: 10%;
+        position: relative;
+    }
+    .about-content::after{
+        display: none;
+    }
+    .about-items{
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        z-index: 22;
+    }
+    .about-item{
+        width: 100%;
+        float: none;
+    }
+    .about-item.info{
+        padding: 20px 0 20px 10px;
+        margin-bottom: 30px;
+    }
+    .about-info-title{
+        font-size: 25px;
+        margin-bottom: 27px;
+    }
+    .about-info-me{
+        display: flex;
+        margin-bottom: 25px;
+    }
+    .about-info-me-list{
+        flex: 1;
+    }
+    .about-info-me-list li{
+        line-height: 2;
+        font-size: 17px;
+        letter-spacing: 1px;
+    }
+    .about-info-btn{
+        height: 40px;
+        padding: 0 20px;
+        font-size: 17px;
+    }
+
+    /*----------- portfolio -------------*/
+    .portfolio{
+        width: 100%;
+        padding: 5% 0;
+    }
+    .portfolio-content{
+        width: 100%;
+        height: 100%;
+        margin-top: 50px;
+        display: block;
+    }
+    
+    .box{
+        width: 47%;
+        height: 300px;
+        margin-bottom: 2%;
+        margin-right: 3%;
+    }
+    /*----------X--------------X-----------*/
+
+    /*------------ contact ---------------------*/
+    .contact{
+        display: block;
+        padding: 0 10px;
+    }
+    .contact-content{
+        display: block;
+    }
+    .form-contact{
+        display: block;
+        width: 100%;
+        flex: none;
+        float: none;
+    }
+    .form-name-email{
+        width: 100%;
+        display: block;
+    }
+    .form-name-email input{
+        flex: none;
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .form-name-email input:last-child{
+        margin-bottom: 0;
+        }
+    .contact-info{
+        flex: none;
+        width: 100%;
+        padding: 5% 0;
+        margin-left: 0;
+        margin-top: 100px;
+    }
+    .contact-info-title{
+        font-size: 22px;
+    }
+    .contact-info-list{
+        font-size: 15px;
+    }
+    /*-------------X-------------X--------------*/
+
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .container{
+        width: 80%;
+        margin: auto;
+    }
+
+    /*---------------- about ----------------*/
+    .about-overlay{
+        transform: rotate(14deg);
+        top: -63%;
+        right: -110%;
+    }
+    .about-info-title{
+        font-size: 23px;
+    }
+    .about-info-me-list li{
+        font-size: 15px;
+    }
+    .about-item.number{
+        float: left;
+        z-index: 5555;
+    }
+    .about-number{
+        margin-top: 50px;
+    }
+    .about-number-item-num{
+        font-size: 60px;
+    }
+    .about-number-item-desc::before{
+        display: none;
+    }
+    .skils-title{
+        font-size: 30px;
+    }
+    .skils-item-title{
+        font-size: 17px;
+    }
+    /*-----------X-------------X---------------*/
+
+
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
+    .container{
+        width: 75%;
+        margin: auto;
+    }
+
+    /*---------------- about ----------------*/
+    .about-overlay{
+        transform: rotate(14deg);
+        top: -63%;
+        right: -100%;
+    }
+    .about-info-title{
+        font-size: 25px;
+    }
+    .about-info-me-list li{
+        font-size: 16px;
+        line-height: 3.5;
+    }
+    .about-item.number{
+        float: left;
+        z-index: 5555;
+    }
+    .about-number{
+        margin-top: 40px;
+    }
+    .about-number-item-num{
+        font-size: 60px;
+    }
+    .about-number-item-desc::before{
+        display: none;
+    }
+    .skils-title{
+        font-size: 30px;
+    }
+    .skils-item-title{
+        font-size: 17px;
+    }
+
+
+
+}
