@@ -345,6 +345,7 @@ ul{
     transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
         -moz-transform: translateY(-50%);
+    z-index: 5;
 }
 .home-img img{
     width: 100%;
