@@ -181,7 +181,7 @@ $(document).ready(function () {
 		// smoth scroll
 		$('.nav-list li').click(function (e) { 
 
-			$('html').animate({
+			$('html,body').animate({
 				scrollTop : $( '#' + $(this).data('link') ).offset().top
 			},1000);
 
@@ -192,7 +192,7 @@ $(document).ready(function () {
 		// home about btn
 		$('.home-info-btn').on('click',function (f) {
 
-			$('html').animate({
+			$('html,body').animate({
 				scrollTop : $('#about').offset().top
 			},1000);
 
