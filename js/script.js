@@ -237,8 +237,3 @@ $(document).ready(function () {
 /*-------------X---------------X-------------*/
 
 
-
-$(document).ready(function () {
-
-
-});
