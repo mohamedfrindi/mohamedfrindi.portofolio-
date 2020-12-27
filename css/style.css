@@ -60,6 +60,7 @@ ul{
     align-items: center;
     padding: 0 40px;
     opacity: 0;
+    -webkit-transition: all .3s ease;
     transition: all .3s ease;
     z-index: 999999999999999;
 }
@@ -220,6 +221,7 @@ ul{
         -webkit-transform: translateY(-50%);
     overflow: hidden;
     z-index: 999;
+    -webkit-transition:all .5s ease;
     transition:all .5s ease;
 }
 .controls > i{
@@ -762,6 +764,7 @@ ul{
     height: 40px;
     background-color: var(--yelow-color);
     border-radius: 50%;
+    -webkit-transition: all .3s ease;
     transition: all .3s ease;
 }
 .contact-info-social a:hover{
