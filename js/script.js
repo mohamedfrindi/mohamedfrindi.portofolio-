@@ -190,13 +190,13 @@ $(document).ready(function () {
 		});
 
 		// home about btn
-		$('.home-info-btn').on('click',function (e) {
+		$('.home-info-btn').on('click',function (f) {
 
 			$('html').animate({
 				scrollTop : $('#about').offset().top
 			},1000);
 
-			e.preventDefault();
+			f.preventDefault();
 
 		});
 
